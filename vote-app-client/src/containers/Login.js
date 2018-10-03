@@ -35,7 +35,8 @@ export default class Login extends Component {
         method: "POST",
         body: creds,
         headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
+            "Content-Type": "application/x-www-form-urlencoded",
+            'Authorization': localStorage.getItem('token')
         }
       }).then(response => {
           response.json().then(data => {

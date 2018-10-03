@@ -1,0 +1,9 @@
+.PollAdd form {
+    padding-bottom: 15px;
+}
+
+.PollAdd form textarea {
+    height: 300px;
+    font-size: 24px;
+}
+  
