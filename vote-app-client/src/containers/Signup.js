@@ -46,7 +46,7 @@ export default class Signup extends Component {
 
     try {
       const creds = `name=${this.state.name}&email=${this.state.email}&password=${this.state.password}`;
-      fetch("https://poll-vote-app.herokuapp.com/api/auth/register", {
+      fetch("http://localhost:3000/api/auth/register", {
         method: "POST",
         body: creds,
         headers: {

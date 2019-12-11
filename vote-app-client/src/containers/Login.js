@@ -31,7 +31,7 @@ export default class Login extends Component {
 
     try {
       const creds = `email=${this.state.email}&password=${this.state.password}`;
-      fetch("https://poll-vote-app.herokuapp.com/api/auth/login", {
+      fetch("http://localhost:3000/api/auth/login", {
         method: "POST",
         body: creds,
         headers: {

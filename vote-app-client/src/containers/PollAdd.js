@@ -19,9 +19,9 @@ export default class PollAdd extends Component {
 
   createPoll(poll) {
     try {
-        fetch("https://poll-vote-app.herokuapp.com/api/polls", {
+        fetch("http://localhost:3000/api/polls", {
           method: "POST",
-          body: poll,
+          body: JSON.stringify(poll),
           headers: {
               'Content-Type': 'application/json',
               'Authorization': localStorage.getItem('token')

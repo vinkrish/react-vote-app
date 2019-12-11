@@ -19,7 +19,7 @@ export default class Home extends Component {
     }
 
     try {
-        fetch("https://poll-vote-app.herokuapp.com/api/polls", {
+        fetch("http://localhost:3000/api/polls", {
           method: "GET",
           headers: {
               'Content-Type': 'application/json',
